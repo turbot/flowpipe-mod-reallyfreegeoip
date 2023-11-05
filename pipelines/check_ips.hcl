@@ -14,7 +14,7 @@ pipeline "check_ips" {
     url      = "https://reallyfreegeoip.org/csv/${each.value}"
   }
 
-  output "report_detailed" {
+  output "report" {
     description = "IP Report details with header."
     value = concat(
       ["IP,Country Code,Country Name,Region Code,Region Name,City,Zip Code,Time Zone,Latitude,Longitude,Metro Code"],
