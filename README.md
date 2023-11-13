@@ -1,11 +1,12 @@
-# Really Free Geo IP Mod for Flowpipe
+# Really Free Geo IP Library Mod for Flowpipe
 
 A collection of [Flowpipe](https://flowpipe.io) pipelines that can be used to:
 
 - Get IP
 - Get IPs in bulk
+- And more!
 
-![image](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/blob/staging/docs/images/flowpipe_test_run.png?raw=true)
+![image](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/blob/main/docs/images/flowpipe_pipeline_run.png?raw=true)
 
 ## Documentation
 
@@ -32,7 +33,7 @@ cd flowpipe-mod-reallyfreegeoip
 
 ### Configuration
 
-This mod does not require and credentials.
+This mod does not require any credentials.
 
 Additional input variables may be defined in the mod's `variables.hcl` file that can be configured to better match your environment and requirements.
 
@@ -49,7 +50,7 @@ flowpipe service start
 Run a pipeline:
 
 ```sh
-flowpipe pipeline run check_ip --pipeline-arg ip_address='127.0.0.1'
+flowpipe pipeline run check_ip
 ```
 
 ## Passing pipeline arguments
@@ -57,7 +58,7 @@ flowpipe pipeline run check_ip --pipeline-arg ip_address='127.0.0.1'
 To pass values into pipeline [parameters](https://flowpipe.io/docs/using-flowpipe/pipeline-parameters), use the following syntax:
 
 ```sh
-flowpipe pipeline run check_ip --pipeline-arg ip_address='127.0.0.1'
+flowpipe pipeline run check_ip --pipeline-arg ip_address='76.76.21.21'
 ```
 
 Multiple pipeline args can be passed in with separate `--pipeline-arg` flags.
@@ -75,7 +76,7 @@ Please see the [contribution guidelines](https://github.com/turbot/flowpipe/blob
 Want to help but not sure where to start? Pick up one of the `help wanted` issues:
 
 - [Flowpipe](https://github.com/turbot/flowpipe/labels/help%20wanted)
-- [Really Free Geo IP Mod](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/labels/help%20wanted)
+- [Really Free Geo IP Library Mod](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/labels/help%20wanted)
 
 ## License
 
