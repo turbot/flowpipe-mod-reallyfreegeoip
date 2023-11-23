@@ -15,7 +15,7 @@ pipeline "get_ips_geolocation" {
   }
 
   output "report" {
-    description = "IP Report details with header."
+    description = "IPs report details with header."
     value = concat(
       ["IP,Country Code,Country Name,Region Code,Region Name,City,Zip Code,Time Zone,Latitude,Longitude,Metro Code"],
       [for ip_response in step.http.get_ips_geolocation : trimsuffix(ip_response.response_body, "\r\n")]
