@@ -1,5 +1,5 @@
-// usage: flowpipe pipeline run check_ip --pipeline-arg ip_address='127.0.0.1'
-pipeline "check_ip" {
+# usage: flowpipe pipeline run get_ip_geolocation --arg ip_address='127.0.0.1'
+pipeline "get_ip_geolocation" {
   title       = "Check IP Address"
   description = "Get information about an IP (v4 or v6)."
 
@@ -15,13 +15,13 @@ pipeline "check_ip" {
     description = "The format of the output. Accepted values are json, csv and xml. Defaults to json."
   }
 
-  step "http" "check_ip" {
+  step "http" "get_ip_geolocation" {
     method = "get"
     url    = "https://reallyfreegeoip.org/${param.format}/${param.ip_address}"
   }
 
   output "report" {
-    description = "IP Report details."
-    value       = step.http.check_ip.response_body
+    description = "IP report details."
+    value       = step.http.get_ip_geolocation.response_body
   }
 }
