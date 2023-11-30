@@ -58,10 +58,10 @@ flowpipe pipeline run get_ip_geolocation
 To pass values into pipeline [parameters](https://flowpipe.io/docs/using-flowpipe/pipeline-parameters), use the following syntax:
 
 ```sh
-flowpipe pipeline run get_ip_geolocation --pipeline-arg ip_address='76.76.21.21'
+flowpipe pipeline run get_ip_geolocation --arg ip_address='76.76.21.21'
 ```
 
-Multiple pipeline args can be passed in with separate `--pipeline-arg` flags.
+Multiple pipeline args can be passed in with separate `--arg` flags.
 
 For more information on passing arguments, please see [Pipeline Args](https://flowpipe.io/docs/using-flowpipe/pipeline-arguments).
 
