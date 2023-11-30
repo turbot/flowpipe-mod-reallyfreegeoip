@@ -1,11 +1,11 @@
-# usage: flowpipe pipeline run get_ip_geolocation --arg ip_address='127.0.0.1'
+# usage: flowpipe pipeline run get_ip_geolocation --arg ip_address="76.76.21.21"
 pipeline "get_ip_geolocation" {
-  title       = "Check IP Address"
-  description = "Get information about an IP address (v4 or v6)."
+  title       = "Get IP Geolocation"
+  description = "Get geolocation data for an IP v4 or v6 address."
 
   param "ip_address" {
     type        = string
-    description = "The IPv4 or IPv6 address to check for reports."
+    description = "The IPv4 or IPv6 address to get the geolocation data."
   }
 
   param "format" {
@@ -20,8 +20,8 @@ pipeline "get_ip_geolocation" {
     url    = "https://reallyfreegeoip.org/${param.format}/${param.ip_address}"
   }
 
-  output "report" {
-    description = "IP report details."
+  output "geolocation" {
+    description = "IP geolocation details."
     value       = step.http.get_ip_geolocation.response_body
   }
 }
