@@ -1,7 +1,7 @@
 # usage: flowpipe pipeline run get_ip_geolocation --arg ip_address='127.0.0.1'
 pipeline "get_ip_geolocation" {
   title       = "Check IP Address"
-  description = "Get information about an IP (v4 or v6)."
+  description = "Get information about an IP address (v4 or v6)."
 
   param "ip_address" {
     type        = string
