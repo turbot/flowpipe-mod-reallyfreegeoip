@@ -3,6 +3,8 @@ pipeline "get_ip_geolocation" {
   title       = "Get IP Geolocation"
   description = "Get geolocation data for an IPv4 or IPv6 address."
 
+  documentation = "## Testing pipeline MD"
+
   param "ip_address" {
     type        = string
     description = "The IPv4 or IPv6 address."
