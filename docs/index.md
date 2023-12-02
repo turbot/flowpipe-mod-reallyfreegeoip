@@ -6,8 +6,6 @@ A collection of [Flowpipe](https://flowpipe.io) pipelines that can be used to:
 - Get IPs in bulk
 - And more!
 
-![image](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/blob/main/docs/images/flowpipe_pipeline_run.png?raw=true)
-
 ## Documentation
 
 - **[Pipelines →](https://hub.flowpipe.io/mods/turbot/reallyfreegeoip/pipelines)**
