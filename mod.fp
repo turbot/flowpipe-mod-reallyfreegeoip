@@ -1,14 +1,14 @@
 mod "reallyfreegeoip" {
-  title         = "Really Free Geo IP"
-  description   = "Run pipelines to supercharge your ReallyFreeGeoIP workflows using Flowpipe."
+  title         = "Really Free GEO IP"
+  description   = "Run pipelines to supercharge your Really Free GEO IP workflows using Flowpipe."
   color         = "#1ba16f"
   documentation = file("./docs/index.md")
   icon          = "/images/flowpipe/mods/turbot/reallyfreegeoip.svg"
-  categories    = ["reallyfreegeoip"]
+  categories    = ["networking"]
 
   opengraph {
     title       = "Really Free Geo IP Mod for Flowpipe"
-    description = "Run pipelines to supercharge your ReallyFreeGeoIP workflows using Flowpipe."
+    description = "Run pipelines to supercharge your Really Free GEO IP workflows using Flowpipe."
     image       = "/images/flowpipe/mods/turbot/reallyfreegeoip-social-graphic.png"
   }
 }
