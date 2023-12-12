@@ -2,7 +2,7 @@ mod "reallyfreegeoip" {
   title         = "Really Free GEO IP"
   description   = "Run pipelines to supercharge your Really Free GEO IP workflows using Flowpipe."
   color         = "#1ba16f"
-  documentation = file("./docs/index.md")
+  documentation = file("./README.md")
   icon          = "/images/mods/turbot/reallyfreegeoip.svg"
   categories    = ["networking"]
 

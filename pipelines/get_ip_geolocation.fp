@@ -23,7 +23,7 @@ pipeline "get_ip_geolocation" {
     url    = "https://reallyfreegeoip.org/${param.format}/${param.ip_address}"
   }
 
-  output "geolocation" {
+  output "ip_geolocation_details" {
     description = "IP geolocation details."
     value       = step.http.get_ip_geolocation.response_body
   }
