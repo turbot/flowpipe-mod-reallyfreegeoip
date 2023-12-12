@@ -28,6 +28,10 @@ git clone https://github.com/turbot/flowpipe-mod-reallyfreegeoip.git
 cd flowpipe-mod-reallyfreegeoip
 ```
 
+### Credentials
+
+No credentials are required.
+
 ### Usage
 
 List pipelines:
@@ -49,6 +53,10 @@ flowpipe pipeline run get_ip_geolocation --arg ip_address='76.76.21.21' --arg fo
 ```
 
 For more examples on how you can run pipelines, please see [Run Pipelines](https://flowpipe.io/docs/run/pipelines).
+
+### Configuration
+
+No additional configuration is required.
 
 ## Open Source & Contributing
 
