@@ -1,6 +1,6 @@
-# Really Free Geo IP Mod for Flowpipe
+# Really Free GEO IP Mod for Flowpipe
 
-Really Free Geo IP pipeline library of [Flowpipe](https://flowpipe.io) enabling seamless integration of Really Free Geo IP services into your workflows.
+Really Free GEO IP pipeline library of [Flowpipe](https://flowpipe.io) enabling seamless integration of Really Free GEO IP services into your workflows.
 
 ## Documentation
 
@@ -63,4 +63,4 @@ This repository is published under the [Apache 2.0 license](https://www.apache.o
 Want to help but not sure where to start? Pick up one of the `help wanted` issues:
 
 - [Flowpipe](https://github.com/turbot/flowpipe/labels/help%20wanted)
-- [Really Free Geo IP Library Mod](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/labels/help%20wanted)
+- [Really Free GEO IP Library Mod](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/labels/help%20wanted)

@@ -7,7 +7,7 @@ mod "reallyfreegeoip" {
   categories    = ["networking"]
 
   opengraph {
-    title       = "Really Free Geo IP Mod for Flowpipe"
+    title       = "Really Free GEO IP Mod for Flowpipe"
     description = "Run pipelines to supercharge your Really Free GEO IP workflows using Flowpipe."
     image       = "/images/mods/turbot/reallyfreegeoip-social-graphic.png"
   }
