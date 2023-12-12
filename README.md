@@ -2,10 +2,6 @@
 
 Really Free Geo IP pipeline library of [Flowpipe](https://flowpipe.io) enabling seamless integration of Really Free Geo IP services into your workflows.
 
-- Get IP
-- Get IPs in bulk
-- And more!
-
 ## Documentation
 
 - **[Pipelines →](https://hub.flowpipe.io/mods/turbot/reallyfreegeoip/pipelines)**
