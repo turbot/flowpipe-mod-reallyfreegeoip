@@ -1,19 +1,16 @@
-# Really Free Geo IP Library Mod for Flowpipe
+# Really Free GEO IP Mod for Flowpipe
 
-A collection of [Flowpipe](https://flowpipe.io) pipelines that can be used to:
-
-- Get IP
-- Get IPs in bulk
-- And more!
-
-![image](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/blob/main/docs/images/flowpipe_pipeline_run.png?raw=true)
+Really Free GEO IP pipeline library of [Flowpipe](https://flowpipe.io) enabling seamless integration of Really Free GEO IP services into your workflows.
 
 ## Documentation
 
 - **[Pipelines →](https://hub.flowpipe.io/mods/turbot/reallyfreegeoip/pipelines)**
-- **[Triggers →](https://hub.flowpipe.io/mods/turbot/reallyfreegeoip/triggers)**
 
 ## Getting started
+
+### Requirements
+
+Docker daemon must be installed and running. Please see [Install Docker Engine](https://docs.docker.com/engine/install/) for more information.
 
 ### Installation
 
@@ -31,55 +28,47 @@ git clone https://github.com/turbot/flowpipe-mod-reallyfreegeoip.git
 cd flowpipe-mod-reallyfreegeoip
 ```
 
-### Configuration
+### Credentials
 
-This mod does not require any credentials.
-
-Additional input variables may be defined in the mod's `variables.hcl` file that can be configured to better match your environment and requirements.
-
-Variables with defaults set do not need to be explicitly set, but it may be helpful to override them.
+No credentials are required.
 
 ### Usage
 
-Start the Flowpipe server to get started:
+List pipelines:
 
 ```sh
-flowpipe service start
+flowpipe pipeline list
 ```
 
 Run a pipeline:
 
 ```sh
-flowpipe pipeline run get_ip_geolocation
-```
-
-## Passing pipeline arguments
-
-To pass values into pipeline [parameters](https://flowpipe.io/docs/using-flowpipe/pipeline-parameters), use the following syntax:
-
-```sh
 flowpipe pipeline run get_ip_geolocation --arg ip_address='76.76.21.21'
 ```
 
-Multiple pipeline args can be passed in with separate `--arg` flags.
+You can pass in pipeline arguments as well:
 
-For more information on passing arguments, please see [Pipeline Args](https://flowpipe.io/docs/using-flowpipe/pipeline-arguments).
+```sh
+flowpipe pipeline run get_ip_geolocation --arg ip_address='76.76.21.21' --arg format='csv'
+```
 
-## Contributing
+For more examples on how you can run pipelines, please see [Run Pipelines](https://flowpipe.io/docs/run/pipelines).
 
-If you have an idea for additional controls or just want to help maintain and extend this mod ([or others](https://github.com/topics/flowpipe-mod)) we would love you to join the community and start contributing.
+### Configuration
 
-- **[Join #flowpipe in our Slack community ](https://flowpipe.io/community/join)**
+No additional configuration is required.
 
-Please see the [contribution guidelines](https://github.com/turbot/flowpipe/blob/main/CONTRIBUTING.md) and our [code of conduct](https://github.com/turbot/flowpipe/blob/main/CODE_OF_CONDUCT.md).
+## Open Source & Contributing
+
+This repository is published under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0). Please see our [code of conduct](https://github.com/turbot/.github/blob/main/CODE_OF_CONDUCT.md). We look forward to collaborating with you!
+
+[Flowpipe](https://flowpipe.io) is a product produced from this open source software, exclusively by [Turbot HQ, Inc](https://turbot.com). It is distributed under our commercial terms. Others are allowed to make their own distribution of the software, but cannot use any of the Turbot trademarks, cloud services, etc. You can learn more in our [Open Source FAQ](https://turbot.com/open-source).
+
+## Get Involved
+
+**[Join #flowpipe on Slack →](https://flowpipe.io/community/join)**
 
 Want to help but not sure where to start? Pick up one of the `help wanted` issues:
 
 - [Flowpipe](https://github.com/turbot/flowpipe/labels/help%20wanted)
-- [Really Free Geo IP Library Mod](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/labels/help%20wanted)
-
-## License
-
-This mod is licensed under the [Apache License 2.0](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/blob/main/LICENSE).
-
-Flowpipe is licensed under the [AGPLv3](https://github.com/turbot/flowpipe/blob/main/LICENSE).
+- [Really Free GEO IP Library Mod](https://github.com/turbot/flowpipe-mod-reallyfreegeoip/labels/help%20wanted)

@@ -1,7 +1,10 @@
-# usage: flowpipe pipeline run get_ip_geolocation --arg ip_address="76.76.21.21"
 pipeline "get_ip_geolocation" {
   title       = "Get IP Geolocation"
   description = "Get geolocation data for an IPv4 or IPv6 address."
+
+  tags = {
+    type = "featured"
+  }
 
   param "ip_address" {
     type        = string
