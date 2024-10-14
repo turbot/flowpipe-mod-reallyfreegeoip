@@ -17,9 +17,9 @@ brew tap turbot/tap
 brew install flowpipe
 ```
 
-### Credentials
+### Connections
 
-No credentials are required.
+No connections are required.
 
 ### Usage
 
