@@ -3,7 +3,7 @@ pipeline "get_ip_geolocation" {
   description = "Get geolocation data for an IPv4 or IPv6 address."
 
   tags = {
-    type = "featured"
+    recommended = "true"
   }
 
   param "ip_address" {
